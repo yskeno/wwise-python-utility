@@ -33,7 +33,7 @@
             }
         },
         {
-            "id": "ak.wwise_show_defined_variables",
+            "id": "ak.debug_show_all_defined_variables",
             "displayName": "Show All Defined Vars on Cmd",
             "defaultShortcut": "",
             "program": "C:/Program Files (x86)/Audiokinetic/Wwise 2019.1.6.7110/Authoring/Data/Add-ons/Commands/show_command_args.bat",
@@ -43,6 +43,28 @@
             "contextMenu": {
                 "basePath": "DEBUG"
             },
+            "mainMenu": {
+                "basePath": "DEBUG"
+            }
+        },
+        {
+            "id": "ak.debug_show_wprojname",
+            "displayName": "Show wprojname",
+            "defaultShortcut": "",
+            "program": "C:/Program Files (x86)/Audiokinetic/Wwise 2019.1.6.7110/Authoring/Data/Add-ons/Commands/waapi_get_info_as_arg.exe",
+            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+            "args": "-a \"C:/Program Files (x86)/Audiokinetic/Wwise 2019.1.6.7110/Authoring/Data/Add-ons/Commands/show_command_args.bat\" -t wprojname",
+            "mainMenu": {
+                "basePath": "DEBUG"
+            }
+        },
+        {
+            "id": "ak.debug_show_wprojpath",
+            "displayName": "Show wprojpath",
+            "defaultShortcut": "",
+            "program": "C:/Program Files (x86)/Audiokinetic/Wwise 2019.1.6.7110/Authoring/Data/Add-ons/Commands/waapi_get_info_as_arg.exe",
+            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+            "args": "-a \"C:/Program Files (x86)/Audiokinetic/Wwise 2019.1.6.7110/Authoring/Data/Add-ons/Commands/show_command_args.bat\" -t wprojpath",
             "mainMenu": {
                 "basePath": "DEBUG"
             }
