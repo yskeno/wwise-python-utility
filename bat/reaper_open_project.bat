@@ -1,5 +1,8 @@
 @echo off
 
+REM If you install portable reaper, set you reaper path as REAPERPATH.
+set REAPERPATH="Your reaper.exe install path"
+
 REM Check 1st argument.
 if "%1"=="" (
     echo Usage:
@@ -26,8 +29,8 @@ if not exist %REAPROJ% (
 
 
 REM Open reaper.exe with arg(reaproject path).
-if exist "[Your reaper.exe install path]" (
-    "[Your reaper.exe install path]" %REAPROJ%
+if exist REAPERPATH (
+    REAPERPATH %REAPROJ%
 ) else if exist "C:/Program Files/REAPER (x64)" (
     "%ProgramFiles%/REAPER (x64)/reaper.exe" %REAPROJ%
     exit
